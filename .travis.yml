@@ -1,0 +1,8 @@
+language: c
+dist: trusty
+
+script:
+  - source oe-init-build-env
+  - bitbake core-image-sato
+
+  
