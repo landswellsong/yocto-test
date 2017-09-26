@@ -10,5 +10,6 @@ addons:
 
 script:
   - source poky/oe-init-build-env
-  - bitbake -qq core-image-sato
+  - unset TERM
+  - bitbake core-image-sato
 
