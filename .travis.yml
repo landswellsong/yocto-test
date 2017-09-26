@@ -1,6 +1,13 @@
 language: c
 dist: trusty
 
+addons:
+  apt:
+    packages:
+    - diffstat
+    - texinfo
+    - chrpath
+
 script:
   - source poky/oe-init-build-env
   - bitbake core-image-sato
